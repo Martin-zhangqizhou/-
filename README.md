@@ -27,10 +27,7 @@ void show_int(void *x){
 
 int main()
 {
-    //show_int(5);
-    //show_float(6.0);
-    printf("hello");
-    printf("%",sizeof(5));
-    printf("%",sizeof(6.0));
+    show_int(5);
+    show_float(6.0);
     return 0;
 }
