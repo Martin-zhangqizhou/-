@@ -21,10 +21,20 @@ void show_float(float x){
     printf("%", &x);
 }
 
+void show_pointer(void *x){
+    show_bytes((byte_pointer) &x,sizeof(void*));
+}
 
-int main()
-{
-    show_int(5);
-    show_float(6.0);
+void test_show_bytes(int val){
+    int ival = val;
+    float fval = (float) ival;
+    int *pval = &ival;
+    show_int(ival);
+    show_float(fval);
+    show_pointer(pval);
+}
+
+int main(){
+    test_show_bytes(12345);
     return 0;
 }
