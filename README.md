@@ -21,9 +21,6 @@ void show_float(float x){
     printf("%", &x);
 }
 
-void show_int(void *x){
-    show_bytes((byte_pointer) &x,sizeof(void*));
-}
 
 int main()
 {
